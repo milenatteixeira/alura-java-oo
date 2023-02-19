@@ -1,0 +1,6 @@
+INDEX VERSION 1.130+/home/miletei/Documentos/Estudos/Alura/Java/.metadata/.plugins/org.eclipse.jdt.core
+2775910871.index
+3527710374.index
+1123767639.index
+1748679790.index
+1943451760.index
