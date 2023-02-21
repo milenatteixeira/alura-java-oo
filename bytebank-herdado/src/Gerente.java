@@ -1,5 +1,10 @@
+/*
+ * O gerente é um funcionário e assina o contrato de Autenticavel
+ * 
+ * */
 
-public class Gerente extends Funcionario {
+
+public class Gerente extends Funcionario implements Autenticavel {
 
 	private int senha;
 	
