@@ -25,7 +25,10 @@ public class Fluxo {
 		
 		for(int i = 1; i <= 5; i++){
 			System.out.println(i);
-			int a = i/0;
+//			int a = i/0;
+			
+			Conta conta = null;
+			System.out.println(conta.toString());
 		}
 		
 		System.out.println("Fim do metodo2");
