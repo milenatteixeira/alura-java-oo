@@ -6,12 +6,9 @@ public class Fluxo {
 		
 		try {
 			metodo1();
-		} catch(ArithmeticException arithmeticException){			
-			String msg = arithmeticException.getMessage();
-			System.out.println("Erro de aritmética: " + msg);
-		} catch(NullPointerException nullPointerException){			
-			String msg = nullPointerException.getMessage();
-			System.out.println("Erro de ponteiro nulo: " + msg);
+		} catch(ArithmeticException | NullPointerException exception ){			
+			String msg = exception.getMessage();
+			System.out.println("Erro: " + msg);
 		}
 
 		System.out.println("Fim do main");
