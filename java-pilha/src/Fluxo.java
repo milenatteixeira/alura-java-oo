@@ -3,7 +3,14 @@ public class Fluxo {
 	
 	public static void main(String[] args){
 		System.out.println("Início do main");
-		metodo1();
+		
+		try {
+			metodo1();
+		} catch(ArithmeticException arithmeticException){			
+			String msg = arithmeticException.getMessage();
+			System.out.println("Erro de aritmética: " + msg);
+		}
+
 		System.out.println("Fim do main");
 	}
 	
