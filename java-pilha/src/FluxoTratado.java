@@ -1,5 +1,5 @@
 
-public class Fluxo {
+public class FluxoTratado {
 	
 	public static void main(String[] args){
 		System.out.println("Início do main");
@@ -9,7 +9,6 @@ public class Fluxo {
 		} catch(ArithmeticException | NullPointerException exception ){			
 			String msg = exception.getMessage();
 			System.out.println("Erro: " + msg);
-			exception.printStackTrace();
 		}
 
 		System.out.println("Fim do main");
@@ -24,12 +23,14 @@ public class Fluxo {
 	private static void metodo2(){
 		System.out.println("Início do metodo2");
 		
-		ArithmeticException arithmeticException = new ArithmeticException(
-		"Erro de aritmética."		
-		);
-
-		throw arithmeticException;
+		for(int i = 1; i <= 5; i++){
+			System.out.println(i);
+//			int a = i/0;
+			
+			Conta conta = null;
+			System.out.println(conta.toString());
+		}
 		
-//		System.out.println("Fim do metodo2"); //unreachble code
+		System.out.println("Fim do metodo2");
 	}
 }
