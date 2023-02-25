@@ -20,6 +20,7 @@ public class FluxoTratado {
 		System.out.println("Fim do metodo1");
 	}
 	
+	@SuppressWarnings("null")
 	private static void metodo2(){
 		System.out.println("Início do metodo2");
 		

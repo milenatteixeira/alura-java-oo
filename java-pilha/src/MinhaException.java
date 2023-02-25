@@ -4,7 +4,7 @@
  * 
  * */
 
-
+@SuppressWarnings("serial")
 public class MinhaException extends Exception { //exception do tipo checked
 	
 	public MinhaException(String msg){
