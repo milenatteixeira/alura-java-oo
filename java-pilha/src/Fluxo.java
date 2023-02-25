@@ -6,7 +6,7 @@ public class Fluxo {
 		
 		try {
 			metodo1();
-		} catch(ArithmeticException | NullPointerException exception ){			
+		} catch(ArithmeticException | NullPointerException | MinhaException exception ){			
 			String msg = exception.getMessage();
 			System.out.println("Erro: " + msg);
 			exception.printStackTrace();
@@ -24,7 +24,7 @@ public class Fluxo {
 	private static void metodo2(){
 		System.out.println("Início do metodo2");
 		
-		throw new ArithmeticException("Erro de aritmética.");
+		throw new MinhaException("Erro de aritmética.");
 		
 //		System.out.println("Fim do metodo2"); //unreachble code
 	}
