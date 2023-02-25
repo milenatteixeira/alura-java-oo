@@ -24,11 +24,7 @@ public class Fluxo {
 	private static void metodo2(){
 		System.out.println("Início do metodo2");
 		
-		ArithmeticException arithmeticException = new ArithmeticException(
-		"Erro de aritmética."		
-		);
-
-		throw arithmeticException;
+		throw new ArithmeticException("Erro de aritmética.");
 		
 //		System.out.println("Fim do metodo2"); //unreachble code
 	}
