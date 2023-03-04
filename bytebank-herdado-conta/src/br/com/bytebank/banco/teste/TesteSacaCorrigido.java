@@ -1,3 +1,8 @@
+package br.com.bytebank.banco.teste;
+
+import br.com.bytebank.banco.modelo.Conta;
+import br.com.bytebank.banco.modelo.ContaCorrente;
+import br.com.bytebank.banco.modelo.SaldoInsuficienteException;
 
 public class TesteSacaCorrigido {
 	public static void main(String[] args) {
@@ -11,6 +16,6 @@ public class TesteSacaCorrigido {
 			System.out.println(ex.getMessage());
 		}
 		
-		System.out.println(conta.saldo);
+		System.out.println(conta.getSaldo());
 	}
 }
